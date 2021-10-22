@@ -1,0 +1,19 @@
+{
+  "name": "instagram-robo",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "build": "tsc",
+    "start": "build && electron .",
+    "dev": "tsnd --transpile-only --respawn --ignore-watch node_modules --cls src/puppeteer"
+  },
+  "dependencies": {
+    "puppeteer": "^10.2.0"
+  },
+  "devDependencies": {
+    "electron": "^15.0.0",
+    "ts-node-dev": "^1.1.8",
+    "typescript": "^4.4.3"
+  }
+}
